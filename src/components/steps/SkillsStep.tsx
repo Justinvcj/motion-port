@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import ContinueButton from '../ui/ContinueButton';
 import { 
-  SiJavascript, SiTypescript, SiPython, SiC, 
+  SiTypescript, SiPython, SiC, 
   SiReact, SiFlutter, SiTailwindcss,
   SiNodedotjs, SiExpress, SiFastapi,
   SiPostgresql, SiSupabase, SiSqlite,

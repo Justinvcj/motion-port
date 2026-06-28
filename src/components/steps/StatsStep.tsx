@@ -1,4 +1,5 @@
 'use client';
+/* eslint-disable @next/next/no-img-element */
 import { motion } from 'framer-motion';
 import ContinueButton from '../ui/ContinueButton';
 import { useEffect, useState } from 'react';

@@ -55,7 +55,7 @@ export default function ContactStep() {
         className="font-display font-extrabold text-white leading-[1.1] mb-4 shrink-0"
         style={{ fontSize: 'clamp(40px, 7vw, 90px)' }}
       >
-        Let's talk.
+        Let&apos;s talk.
       </motion.h1>
 
       <motion.p

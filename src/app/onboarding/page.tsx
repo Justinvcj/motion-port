@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const NODES = [
@@ -69,7 +69,7 @@ export default function OnboardingPage() {
                 className="text-center w-full absolute bottom-0"
               >
                 <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-10">
-                  What's your<br/>name?
+                  What&apos;s your<br/>name?
                 </h2>
                 
                 <div className="flex flex-col gap-3 w-full max-w-sm mx-auto shadow-xl">
@@ -151,7 +151,7 @@ export default function OnboardingPage() {
                 className="text-center absolute bottom-0 w-full"
               >
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[1]">
-                  You're all set,<br />{name}!
+                  You&apos;re all set,<br />{name}!
                 </h1>
               </motion.div>
             )}

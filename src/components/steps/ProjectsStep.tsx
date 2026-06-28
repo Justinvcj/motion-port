@@ -50,7 +50,7 @@ export default function ProjectsStep() {
         className="font-display font-extrabold text-white leading-[1.1] mb-10 shrink-0"
         style={{ fontSize: 'clamp(40px, 7vw, 90px)' }}
       >
-        Things I've built.
+        Things I&apos;ve built.
       </motion.h1>
 
       <motion.div
