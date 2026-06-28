@@ -23,19 +23,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <motion.div
       variants={cardVariants}
       whileHover={{ y: -6, boxShadow: "0 16px 40px rgba(0,0,0,0.15)" }}
-      className="bg-white/20 border-[1.5px] border-white/40 rounded-[20px] p-7 backdrop-blur-[12px] flex flex-col w-full md:w-[320px] text-left shrink-0"
+      className="bg-white/20 border-[1.5px] border-white/40 rounded-[20px] p-4 backdrop-blur-[12px] flex flex-col w-full md:w-[280px] text-left shrink-0"
     >
-      <div className="text-[48px] leading-none mb-4">{project.emoji}</div>
+      <div className="text-[36px] leading-none mb-2">{project.emoji}</div>
       
-      <h3 className="font-display font-bold text-[22px] text-white mb-2 leading-tight">
+      <h3 className="font-display font-bold text-[18px] text-white mb-1 leading-tight">
         {project.title}
       </h3>
       
-      <p className="font-sans text-[14px] text-white/85 line-clamp-2 mb-6 min-h-[40px]">
+      <p className="font-sans text-[13px] text-white/85 line-clamp-2 mb-3 min-h-[36px]">
         {project.description}
       </p>
 
-      <div className="flex flex-wrap gap-2 mb-8 mt-auto">
+      <div className="flex flex-wrap gap-1.5 mb-4 mt-auto">
         {project.tech.map((t, i) => (
           <span 
             key={i}
@@ -51,7 +51,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           href={project.github} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="flex-1 text-center py-2.5 border border-white rounded-full text-white font-sans font-medium hover:bg-white/10 transition-colors"
+          className="flex-1 text-center py-1.5 border border-white rounded-full text-white text-[13px] font-sans font-medium hover:bg-white/10 transition-colors"
         >
           GitHub ↗
         </a>
@@ -59,7 +59,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           href={project.live} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="flex-1 text-center py-2.5 bg-white text-[#1A6FA0] rounded-full font-sans font-medium hover:bg-white/90 transition-colors"
+          className="flex-1 text-center py-1.5 bg-white text-[#1A6FA0] text-[13px] rounded-full font-sans font-medium hover:bg-white/90 transition-colors"
         >
           Live ↗
         </a>

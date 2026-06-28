@@ -51,13 +51,13 @@ export default function SkillsStep() {
   };
 
   return (
-    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-12">
+    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-4">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="font-display font-extrabold text-white leading-[1.1] mb-12"
-        style={{ fontSize: 'clamp(40px, 7vw, 90px)' }}
+        className="font-display font-extrabold text-white leading-[1.1] mb-6"
+        style={{ fontSize: 'clamp(28px, 5vw, 64px)' }}
       >
         My toolkit.
       </motion.h1>
@@ -66,7 +66,7 @@ export default function SkillsStep() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-[800px] mb-12"
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-[800px] mb-6"
       >
         {SKILLS.map((skill, i) => (
           <motion.div
@@ -75,7 +75,7 @@ export default function SkillsStep() {
             whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.4)' }}
             className="flex items-center justify-center gap-2 bg-white/20 border-[1.5px] border-white/40 rounded-full px-5 py-2.5 text-white font-sans font-medium text-[15px] cursor-default transition-colors"
           >
-            <skill.icon className="text-lg shrink-0" />
+            <skill.icon className="text-base shrink-0" />
             <span className="truncate">{skill.name}</span>
           </motion.div>
         ))}

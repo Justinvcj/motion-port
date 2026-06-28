@@ -56,25 +56,25 @@ export default function StatsStep() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-12">
+    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-4">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="font-display font-extrabold text-white leading-[1.1] mb-12"
-        style={{ fontSize: 'clamp(40px, 7vw, 90px)' }}
+        className="font-display font-extrabold text-white leading-[1.1] mb-6"
+        style={{ fontSize: 'clamp(28px, 5vw, 64px)' }}
       >
         By the numbers.
       </motion.h1>
 
-      <div className="flex flex-col md:flex-row gap-6 w-full max-w-[900px] mb-10">
+      <div className="flex flex-col md:flex-row gap-3 w-full max-w-[900px] mb-6">
         
         {/* GitHub Stats Card */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex-1 bg-white/20 border-[1.5px] border-white/40 rounded-[20px] p-6 backdrop-blur-[12px] flex flex-col gap-4"
+          className="flex-1 bg-white/20 border-[1.5px] border-white/40 rounded-[20px] p-4 backdrop-blur-[12px] flex flex-col gap-4"
         >
           <img 
             src="https://github-readme-stats.vercel.app/api?username=Justinvcj&show_icons=true&theme=transparent&hide_border=true&title_color=ffffff&icon_color=ffffff&text_color=ffffff&bg_color=00000000" 
@@ -97,29 +97,29 @@ export default function StatsStep() {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex-1 bg-white/20 border-[1.5px] border-white/40 rounded-[20px] p-6 backdrop-blur-[12px] flex flex-col items-center justify-center"
+          className="flex-1 bg-white/20 border-[1.5px] border-white/40 rounded-[20px] p-4 backdrop-blur-[12px] flex flex-col items-center justify-center"
         >
           {leetCodeStats ? (
             <>
-              <div className="font-display font-extrabold text-[64px] text-white leading-none">
+              <div className="font-display font-extrabold text-[48px] text-white leading-none">
                 <AnimatedNumber value={leetCodeStats.total} />
               </div>
-              <div className="font-sans text-[14px] text-white/70 mb-8">
+              <div className="font-sans text-[14px] text-white/70 mb-4">
                 problems solved
               </div>
               
               <div className="flex gap-4 font-sans text-[14px]">
                 <div className="flex flex-col items-center">
                   <div className="flex items-center gap-1.5 mb-1 text-white/80"><div className="w-2.5 h-2.5 rounded-full bg-[#4ade80]" /> Easy</div>
-                  <span className="font-bold text-white text-lg"><AnimatedNumber value={leetCodeStats.easy} /></span>
+                  <span className="font-bold text-white text-base"><AnimatedNumber value={leetCodeStats.easy} /></span>
                 </div>
                 <div className="flex flex-col items-center">
                   <div className="flex items-center gap-1.5 mb-1 text-white/80"><div className="w-2.5 h-2.5 rounded-full bg-[#facc15]" /> Medium</div>
-                  <span className="font-bold text-white text-lg"><AnimatedNumber value={leetCodeStats.medium} /></span>
+                  <span className="font-bold text-white text-base"><AnimatedNumber value={leetCodeStats.medium} /></span>
                 </div>
                 <div className="flex flex-col items-center">
                   <div className="flex items-center gap-1.5 mb-1 text-white/80"><div className="w-2.5 h-2.5 rounded-full bg-[#f87171]" /> Hard</div>
-                  <span className="font-bold text-white text-lg"><AnimatedNumber value={leetCodeStats.hard} /></span>
+                  <span className="font-bold text-white text-base"><AnimatedNumber value={leetCodeStats.hard} /></span>
                 </div>
               </div>
             </>

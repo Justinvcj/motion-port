@@ -28,25 +28,25 @@ export default function ExperienceStep() {
   };
 
   return (
-    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-12">
+    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-4">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="font-display font-extrabold text-white leading-[1.1] mb-12 shrink-0"
-        style={{ fontSize: 'clamp(40px, 7vw, 90px)' }}
+        className="font-display font-extrabold text-white leading-[1.1] mb-6 shrink-0"
+        style={{ fontSize: 'clamp(28px, 5vw, 64px)' }}
       >
         My journey.
       </motion.h1>
 
-      <div className="relative w-full max-w-[600px] mb-8 overflow-y-auto max-h-[50vh] md:overflow-visible md:max-h-none py-4 px-2" style={{ WebkitOverflowScrolling: 'touch' }}>
+      <div className="relative w-full max-w-[600px] mb-4 overflow-y-auto max-h-[50vh] md:overflow-visible md:max-h-none py-4 px-2" style={{ WebkitOverflowScrolling: 'touch' }}>
         {/* Center vertical line */}
         <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-white/30 -translate-x-1/2 hidden md:block" />
         
         {/* Mobile vertical line */}
         <div className="absolute left-[20px] top-0 bottom-0 w-[2px] bg-white/30 md:hidden" />
 
-        <motion.div variants={container} initial="hidden" animate="show" className="flex flex-col gap-6">
+        <motion.div variants={container} initial="hidden" animate="show" className="flex flex-col gap-3">
           {EXPERIENCE.map((exp, i) => (
             <motion.div key={i} variants={itemVariant} className="relative flex flex-col md:flex-row items-start md:items-center w-full">
               

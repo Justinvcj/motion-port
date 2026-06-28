@@ -21,13 +21,13 @@ export default function HeroStep() {
   };
 
   return (
-    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-12">
+    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-4">
       {/* Pill Badge */}
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 0.5 }}
-        className="px-4 py-1.5 rounded-full bg-surface border border-border-subtle text-white font-sans text-[13px] mb-8"
+        className="px-4 py-1.5 rounded-full bg-surface border border-border-subtle text-white font-sans text-[13px] mb-4"
       >
         👋 Available for opportunities
       </motion.div>
@@ -52,7 +52,7 @@ export default function HeroStep() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.35, duration: 0.6 }}
-        className="font-sans font-medium text-white/85 text-center max-w-[600px] mb-12"
+        className="font-sans font-medium text-white/85 text-center max-w-[600px] mb-6"
         style={{ fontSize: 'clamp(18px, 2.5vw, 28px)' }}
       >
         Full Stack Developer. Builder of Equinox.

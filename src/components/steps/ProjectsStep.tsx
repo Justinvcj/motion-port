@@ -42,13 +42,13 @@ export default function ProjectsStep() {
   };
 
   return (
-    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-12">
+    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-4">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="font-display font-extrabold text-white leading-[1.1] mb-10 shrink-0"
-        style={{ fontSize: 'clamp(40px, 7vw, 90px)' }}
+        className="font-display font-extrabold text-white leading-[1.1] mb-6 shrink-0"
+        style={{ fontSize: 'clamp(28px, 5vw, 64px)' }}
       >
         Things I&apos;ve built.
       </motion.h1>
@@ -57,7 +57,7 @@ export default function ProjectsStep() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="flex flex-col md:flex-row gap-6 mb-10 overflow-y-auto md:overflow-visible max-h-[60vh] md:max-h-none w-full max-w-[1000px] px-2 py-4"
+        className="flex flex-col md:flex-row gap-3 mb-6 overflow-y-auto md:overflow-visible max-h-[60vh] md:max-h-none w-full max-w-[1000px] px-2 py-4"
         style={{ WebkitOverflowScrolling: 'touch' }}
       >
         {PROJECTS.map((project, i) => (

@@ -68,7 +68,7 @@ export default function PortfolioApp() {
             initial="enter"
             animate="center"
             exit="exit"
-            className="absolute inset-0 flex flex-col w-full h-full pt-[100px] pb-[160px] overflow-y-auto overflow-x-hidden" // padding for logo/counter and journey path
+            className="absolute inset-0 flex flex-col w-full h-full pt-16 pb-[100px] overflow-y-auto overflow-x-hidden" // padding for logo/counter and journey path
           >
             {CurrentStepComponent && <CurrentStepComponent />}
           </motion.div>

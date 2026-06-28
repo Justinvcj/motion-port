@@ -47,13 +47,13 @@ export default function ContactStep() {
   };
 
   return (
-    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-12">
+    <div className="flex flex-col items-center text-center w-full px-4 my-auto min-h-min py-4">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="font-display font-extrabold text-white leading-[1.1] mb-4 shrink-0"
-        style={{ fontSize: 'clamp(40px, 7vw, 90px)' }}
+        style={{ fontSize: 'clamp(28px, 5vw, 64px)' }}
       >
         Let&apos;s talk.
       </motion.h1>
@@ -62,7 +62,7 @@ export default function ContactStep() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="font-sans text-[18px] text-white/85 max-w-[480px] mb-10 shrink-0"
+        className="font-sans text-[18px] text-white/85 max-w-[480px] mb-6 shrink-0"
       >
         Open to full-time roles, freelance projects, and collabs.
       </motion.p>
@@ -72,7 +72,7 @@ export default function ContactStep() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.5 }}
         onSubmit={handleSubmit}
-        className="flex flex-col gap-4 w-full max-w-[480px] mb-8 shrink-0"
+        className="flex flex-col gap-4 w-full max-w-[480px] mb-4 shrink-0"
       >
         <input
           type="text"
@@ -110,7 +110,7 @@ export default function ContactStep() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
-        className="flex gap-4 mb-8 shrink-0"
+        className="flex gap-4 mb-4 shrink-0"
       >
         {[
           { icon: SiGithub, href: "https://github.com/Justinvcj" },
